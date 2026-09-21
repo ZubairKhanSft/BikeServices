@@ -148,24 +148,12 @@ export default function HomePage() {
                 width="100%"
                 height="100%"
                 className="absolute inset-0"
-                style={{ border: 0, minHeight: '280px' }}
+                style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Chhindwara Bike Services location map"
               ></iframe>
-
-              {/* Fallback static map (OpenStreetMap) - shown as a clickable image so users can still see the location if embeds are blocked */}
-              <div className="mt-4 text-center">
-                <a href="https://www.google.com/maps/place/Chhindwara+Bike+Services/@22.0605777,78.9422883,17z" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="https://staticmap.openstreetmap.de/staticmap.php?center=22.060591,78.9424304&zoom=17&size=800x400&markers=22.060591,78.9424304,red-pushpin"
-                    alt="Chhindwara Bike Services map (fallback)"
-                    className="mx-auto rounded-lg shadow-lg w-full max-w-3xl"
-                  />
-                </a>
-                <p className="text-sm text-gray-600 mt-2">If the embedded map is blocked, click the image to open the location in Google Maps.</p>
-              </div>
             </div>
           </div>
         </div>
