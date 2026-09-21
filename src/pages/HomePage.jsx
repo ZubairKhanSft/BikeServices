@@ -132,7 +132,7 @@ export default function HomePage() {
               </a>
               <a
                 className="btn-ghost"
-                href="https://www.google.com/maps?q=22.060591,78.9424304&z=17"
+                href="https://www.google.com/maps/place/Chhindwara+Bike+Services/@22.0605777,78.9422883,17z"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -144,7 +144,7 @@ export default function HomePage() {
           <div className="flex-1 min-w-0">
             <div className="relative aspect-[16/9] overflow-hidden rounded-3xl shadow-2xl">
               <iframe
-                src="https://www.google.com/maps?q=22.060591,78.9424304&z=17&output=embed"
+                src="https://www.google.com/maps/place/Chhindwara+Bike+Services/@22.0605777,78.9422883,17z/data=!3m1!4b1!4m5!3m4!1s0x397723b6c84d4e9d:0x0!8m2!3d22.060591!4d78.9424304?hl=en&output=embed"
                 width="100%"
                 height="100%"
                 className="absolute inset-0"
