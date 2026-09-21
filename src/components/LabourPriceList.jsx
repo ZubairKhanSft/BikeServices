@@ -53,7 +53,7 @@ export default function LabourPriceList() {
   return (
     <section className="bg-slate-100 text-gray-800 py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-indigo-600 text-center mb-8">
+        <h2 className="text-3xl font-bold text-yellow-500 text-center mb-8">
           Bike Service Labour Price List
         </h2>
 
@@ -66,25 +66,25 @@ export default function LabourPriceList() {
         {priceData.map((section, i) => (
           <div
             key={i}
-            className="mb-12 bg-white border border-indigo-600 rounded-lg shadow-md"
+            className="mb-12 bg-white border border-yellow-500 rounded-lg shadow-md"
           >
-            <div className="px-6 py-4 border-b border-indigo-600 flex items-center justify-between">
-              <h3 className="text-xl font-semibold text-indigo-700">{section.category}</h3>
-              <span className="text-sm bg-indigo-600 text-white px-3 py-1 rounded font-semibold">
+            <div className="px-6 py-4 border-b border-yellow-500 flex items-center justify-between">
+              <h3 className="text-xl font-semibold text-yellow-600">{section.category}</h3>
+              <span className="text-sm bg-yellow-500 text-black px-3 py-1 rounded font-semibold">
                 {section.priceRange}
               </span>
             </div>
 
             <table className="w-full text-left text-sm text-gray-700">
               <thead>
-                <tr className="border-b border-indigo-500 bg-indigo-50">
+                <tr className="border-b border-yellow-400 bg-yellow-100">
                   <th className="px-6 py-3">Service Type</th>
                   <th className="px-6 py-3">Price</th>
                 </tr>
               </thead>
               <tbody>
                 {section.services.map((item, idx) => (
-                  <tr key={idx} className="border-t border-gray-200 hover:bg-indigo-50">
+                  <tr key={idx} className="border-t border-gray-200 hover:bg-yellow-50">
                     <td className="px-6 py-3">{item.name}</td>
                     <td className="px-6 py-3">{item.price}</td>
                   </tr>
@@ -102,7 +102,7 @@ export default function LabourPriceList() {
         </div>
 
         <div className="text-center mt-8">
-          <button onClick={() => setModalOpen(true)} className="btn-primary px-6 py-3">
+          <button onClick={() => setModalOpen(true)} className="bg-yellow-500 text-black font-bold px-6 py-3 rounded hover:bg-yellow-400 transition">
             Book Now
           </button>
         </div>

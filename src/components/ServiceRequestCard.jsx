@@ -115,12 +115,12 @@ export default function ServiceRequestCard() {
             alt="Bike Service"
             className="w-full h-full object-cover transition-all duration-700"
           />
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
             {images.map((_, index) => (
               <span
                 key={index}
                 className={`w-3 h-3 rounded-full ${
-                  index === currentImage ? 'bg-[#d4af37]' : 'bg-white/50'
+                  index === currentImage ? 'bg-yellow-500' : 'bg-white/50'
                 }`}
               ></span>
             ))}
@@ -129,7 +129,7 @@ export default function ServiceRequestCard() {
 
         {/* FORM – RIGHT ON DESKTOP, TOP ON MOBILE */}
         <div className="p-8 bg-white order-1 md:order-2">
-          <h2 className="text-2xl font-bold text-indigo-600 mb-6 text-center">
+          <h2 className="text-2xl font-bold text-yellow-500 mb-6 text-center">
             Bike Repair <span className="text-gray-800">– See Price</span>
           </h2>
 
@@ -188,7 +188,7 @@ export default function ServiceRequestCard() {
 
             <button
               type="submit"
-              className="btn-primary mt-4"
+              className="bg-yellow-500 text-black font-bold py-3 rounded hover:bg-yellow-400 mt-4 transition"
             >
               Request a Callback
             </button>

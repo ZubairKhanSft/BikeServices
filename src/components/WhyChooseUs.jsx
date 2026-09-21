@@ -7,26 +7,26 @@ export default function WhyChooseUs() {
         {/* Badges */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center mb-10">
           <div className="flex flex-col items-center">
-            <FaMotorcycle size={30} className="text-indigo-600 mb-2" />
+            <FaMotorcycle size={30} className="text-yellow-500 mb-2" />
             <p className="text-sm font-medium">Free Pickup & Drop</p>
           </div>
           <div className="flex flex-col items-center">
-            <FaTools size={30} className="text-indigo-600 mb-2" />
+            <FaTools size={30} className="text-yellow-500 mb-2" />
             <p className="text-sm font-medium">Trained Mechanic</p>
           </div>
           <div className="flex flex-col items-center">
-            <FaShieldAlt size={30} className="text-indigo-600 mb-2" />
+            <FaShieldAlt size={30} className="text-yellow-500 mb-2" />
             <p className="text-sm font-medium">10 Days Warranty</p>
           </div>
           <div className="flex flex-col items-center">
-            <FaCogs size={30} className="text-indigo-600 mb-2" />
+            <FaCogs size={30} className="text-yellow-500 mb-2" />
             <p className="text-sm font-medium">Genuine Spare Parts</p>
           </div>
         </div>
 
         {/* Description */}
         <div className="text-gray-700 text-sm leading-6 space-y-4">
-          <h2 className="text-2xl font-bold text-indigo-600 mb-3">
+          <h2 className="text-2xl font-bold text-yellow-500 mb-3">
             Doorstep Bike Service
           </h2>
           <p>

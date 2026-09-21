@@ -37,7 +37,7 @@ export default function ServicePackages() {
   return (
     <section className="bg-slate-100 text-gray-900 py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-indigo-600 mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-yellow-500 mb-10">
           Choose Your Service Package
         </h2>
 
@@ -48,17 +48,17 @@ export default function ServicePackages() {
               className="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-xl font-bold text-indigo-600 mb-2">{pkg.title}</h3>
+                <h3 className="text-xl font-bold text-yellow-500 mb-2">{pkg.title}</h3>
                 <p className="text-2xl font-semibold text-gray-900 mb-2">{pkg.price}</p>
                 <p className="text-sm text-gray-600 mb-1">{pkg.time}</p>
                 <p className="text-sm text-gray-600 mb-1">{pkg.description}</p>
                 <p className="text-sm text-gray-600 mb-4">{pkg.points}</p>
-                <button className="text-indigo-600 underline hover:text-indigo-500 text-sm">
+                <button className="text-yellow-500 underline hover:text-yellow-600 text-sm">
                   See checklist
                 </button>
               </div>
 
-              <button onClick={() => setModalOpen(true)} className="mt-6 btn-primary">
+              <button onClick={() => setModalOpen(true)} className="mt-6 bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-2 rounded transition">
                 Check Price
               </button>
             </div>
