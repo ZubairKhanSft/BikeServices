@@ -107,7 +107,7 @@ export default function HomePage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </Helmet>
 
-      <section id="location" className="max-w-7xl mx-auto px-4 py-10">
+      {/* <section id="location" className="max-w-7xl mx-auto px-4 py-10">
         <div className="card flex flex-col gap-8 p-8 lg:flex-row lg:items-start">
           <div className="flex-1 min-w-0">
             <h2 className="text-3xl font-bold text-indigo-600 mb-3">Chhindwara Bike Services</h2>
@@ -132,7 +132,7 @@ export default function HomePage() {
               </a>
               <a
                 className="btn-ghost"
-                href="https://www.google.com/maps?q=22.060591,78.9424304&z=17"
+                href="https://www.google.com/maps/place/Chhindwara+Bike+Services/@22.0605777,78.9422883,116m"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -144,7 +144,7 @@ export default function HomePage() {
           <div className="flex-1 min-w-0">
             <div className="relative aspect-[16/9] overflow-hidden rounded-3xl shadow-2xl">
               <iframe
-                src="https://www.google.com/maps?q=22.060591,78.9424304&z=17&output=embed"
+                src="https://www.google.com/maps?q=Chhindwara+Bike+Services+Bail+Bazar+Chhindwara&z=17&output=embed"
                 width="100%"
                 height="100%"
                 className="absolute inset-0"
@@ -157,7 +157,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="contact">
         <ServiceRequestCard />
