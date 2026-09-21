@@ -3,19 +3,19 @@ import { FaUsers, FaHome, FaStore } from "react-icons/fa";
 export default function JoinUsBanner() {
   const items = [
     {
-      icon: <FaUsers className="text-5xl mb-4 group-hover:text-yellow-500 transition" />,
+      icon: <FaUsers className="text-5xl mb-4 text-[#0b2340] group-hover:text-[#d4af37] transition" />,
       title: "Are you a Bike Mechanic?",
       description:
         "Join our network of two-wheeler mechanics across India and start earning today!",
     },
     {
-      icon: <FaHome className="text-5xl mb-4 group-hover:text-yellow-500 transition" />,
+      icon: <FaHome className="text-5xl mb-4 text-[#0b2340] group-hover:text-[#d4af37] transition" />,
       title: "Register your bike Workshop?",
       description:
         "Register your bike workshop with us and start getting huge customers base and increase your business.",
     },
     {
-      icon: <FaStore className="text-5xl mb-4 group-hover:text-yellow-500 transition" />,
+      icon: <FaStore className="text-5xl mb-4 text-[#0b2340] group-hover:text-[#d4af37] transition" />,
       title: "Looking for Franchise?",
       description:
         "Start a multi-brand two wheeler service workshop franchise today and become your own boss.",

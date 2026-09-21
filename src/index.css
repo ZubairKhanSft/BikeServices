@@ -1,3 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Brand color overrides for premium Gold palette
+  Primary: #0b2340
+  Accent:  #d4af37
+  These override existing Tailwind indigo utility classes for consistency. */
+:root {
+ --brand-primary: #0b2340;
+ --brand-primary-strong: #081b31;
+ --brand-primary-soft: rgba(11, 35, 64, 0.08);
+ --brand-accent: #d4af37;
+ --brand-accent-strong: #b9941a;
+ --brand-accent-soft: rgba(212, 175, 55, 0.12);
+ --brand-surface: #f7f5f1;
+ --brand-border: rgba(11, 35, 64, 0.12);
+ --brand-shadow: rgba(11, 35, 64, 0.14);
+ --text-primary: #0f172a;
+ --text-secondary: #475569;
+}
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body {
+ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+ color: var(--text-primary);
+ background: #f8fafc;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', 'Inter', system-ui; }
+
+.text-indigo-600 { color: var(--brand-primary) !important; }
+.text-indigo-700 { color: var(--brand-accent) !important; }
+.text-indigo-500 { color: var(--brand-accent) !important; }
+.text-indigo-800 { color: var(--brand-primary) !important; }
+.text-indigo-900 { color: var(--brand-primary) !important; }
+
+.bg-indigo-50 { background-color: var(--brand-primary-soft) !important; }
+.bg-indigo-100 { background-color: var(--brand-accent-soft) !important; }
+.bg-indigo-500 { background-color: var(--brand-accent) !important; }
+.bg-indigo-600 { background-color: var(--brand-primary) !important; }
+.bg-indigo-700 { background-color: var(--brand-primary) !important; }
+
+.border-indigo-100 { border-color: rgba(11, 35, 64, 0.08) !important; }
+.border-indigo-200 { border-color: rgba(11, 35, 64, 0.15) !important; }
+.border-indigo-500 { border-color: var(--brand-accent) !important; }
+.border-indigo-600 { border-color: var(--brand-primary) !important; }
+
+.hover\:bg-indigo-500:hover { background-color: var(--brand-accent) !important; }
+.hover\:bg-indigo-600:hover { background-color: var(--brand-primary) !important; }
+.hover\:text-indigo-600:hover { color: var(--brand-primary) !important; }
+.hover\:text-indigo-700:hover { color: var(--brand-accent) !important; }
+.group:hover .group-hover\:text-indigo-600,
+.group-hover\:text-indigo-600:hover { color: var(--brand-accent) !important; }
+
+.from-indigo-900 { --tw-gradient-from: var(--brand-primary) !important; }
+.to-indigo-900 { --tw-gradient-to: var(--brand-primary) !important; }
+.from-indigo-600 { --tw-gradient-from: var(--brand-primary) !important; }
+.to-indigo-600 { --tw-gradient-to: var(--brand-primary) !important; }
+
+/* Buttons: match live site styling */
+.btn-primary {
+  background: var(--brand-primary);
+  color: #ffffff;
+  padding: 0.7rem 1.1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  box-shadow: 0 8px 20px rgba(11, 35, 64, 0.14);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+.btn-primary:hover {
+  background: var(--brand-accent);
+  color: var(--brand-primary-strong);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(212, 175, 55, 0.25);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--brand-primary);
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  padding: 0.7rem 1.1rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.btn-ghost:hover {
+  background: rgba(11, 35, 64, 0.04);
+  border-color: rgba(11, 35, 64, 0.2);
+}
+
+.card { border-radius: 18px; box-shadow: 0 10px 32px rgba(15, 23, 42, 0.08); }
+
+#location .card { display:flex; gap:18px; padding:20px; align-items:center; flex-wrap:wrap; }
+#location .card > div { flex:1; min-width:260px; }
+@media (max-width: 768px) {
+  #location .card { flex-direction:column; }
+}
+@media (min-width: 769px) {
+  #location .card { flex-direction:row; }
+}
+
+.btn-primary:focus, .btn-ghost:focus, a:focus { outline: 3px solid rgba(212, 175, 55, 0.25); outline-offset: 3px; }
+
+[id='root'] .bg-indigo-50,
+[id='root'] .bg-indigo-100,
+[id='root'] .bg-indigo-500,
+[id='root'] .bg-indigo-600,
+[id='root'] .text-indigo-600,
+[id='root'] .text-indigo-700,
+[id='root'] .border-indigo-100,
+[id='root'] .border-indigo-200,
+[id='root'] .border-indigo-500,
+[id='root'] .border-indigo-600 {
+  transition: all 0.2s ease;
+}
+
+/* Typography and UI tokens */
+:root {
+	--radius-lg: 12px;
+	--card-shadow: 0 8px 30px rgba(12,14,20,0.08);
+}
+
+html { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color: #0f172a; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', 'Inter', system-ui; }
+
+/* Buttons */
+.btn-primary {
+	background: var(--brand-primary);
+	color: white;
+	padding: 0.6rem 1rem;
+	border-radius: var(--radius-lg);
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+	gap: .5rem;
+	box-shadow: var(--card-shadow);
+	transition: transform .12s ease, background-color .12s ease, box-shadow .12s ease;
+}
+.btn-primary:hover { background: var(--brand-accent); transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--brand-accent); border-radius: 10px; padding: .5rem .75rem; border: 1px solid transparent; }
+.btn-ghost:hover { background: rgba(0,0,0,0.04); }
+
+/* Card */
+.card { border-radius: var(--radius-lg); box-shadow: var(--card-shadow); }
+
+/* Location card responsive layout */
+#location .card { display:flex; gap:18px; padding:20px; align-items:center; flex-wrap:wrap; }
+#location .card > div { flex:1; min-width:260px; }
+@media (max-width: 768px) {
+	#location .card { flex-direction:column; }
+}
+@media (min-width: 769px) {
+	#location .card { flex-direction:row; }
+}
+
+/* Accessible focus */
+.btn-primary:focus, .btn-ghost:focus, a:focus { outline: 3px solid color-mix(in srgb, var(--brand-accent) 20%, transparent); outline-offset: 3px; }
+
+/* Backgrounds */
+.bg-indigo-600 { background-color: var(--brand-primary) !important; }
+.bg-indigo-500 { background-color: var(--brand-accent) !important; }
+.bg-indigo-50 { background-color: rgba(212,175,55,0.06) !important; }
+
+/* Borders */
+.border-indigo-600 { border-color: var(--brand-primary) !important; }
+.border-indigo-500 { border-color: var(--brand-accent) !important; }
+
+/* Hover states */
+.hover\:bg-indigo-500:hover { background-color: var(--brand-accent) !important; }
+.hover\:text-indigo-600:hover { color: var(--brand-primary) !important; }
+
+/* Icon fills */
+.text-indigo-600 svg { color: var(--brand-primary); }
+

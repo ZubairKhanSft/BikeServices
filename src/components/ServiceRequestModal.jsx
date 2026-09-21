@@ -96,7 +96,7 @@ export default function ServiceRequestModal({ isOpen, onClose }) {
           ×
         </button>
 
-        <h2 className="text-2xl font-bold text-yellow-500 mb-4 text-center">
+        <h2 className="text-2xl font-bold text-indigo-600 mb-4 text-center">
           Bike Repair <span className="text-gray-800">Request</span>
         </h2>
 
@@ -149,7 +149,7 @@ export default function ServiceRequestModal({ isOpen, onClose }) {
 
           <button
             type="submit"
-            className="bg-yellow-500 text-black font-bold py-3 rounded hover:bg-yellow-400 transition"
+            className="btn-primary"
           >
             Submit Request
           </button>
