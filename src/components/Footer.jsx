@@ -69,6 +69,27 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Footer map (click to open place) */}
+      <div className="mt-8">
+        <div className="mx-auto rounded-lg overflow-hidden shadow-sm" style={{ maxWidth: '860px' }}>
+          <div style={{ position: 'relative', paddingBottom: '36%' }}>
+            <iframe
+              title="Chhindwara Bike Services (footer)"
+              src="https://www.google.com/maps/place/Chhindwara+Bike+Services/@22.0605777,78.9422883,17z/data=!3m1!4b1!4m5!3m4!1s0x397723b6c84d4e9d:0x0!8m2!3d22.060591!4d78.9424304?hl=en&output=embed"
+              className="absolute left-0 top-0 w-full h-full border-0"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            {/* overlay so clicking the map opens the place in Google Maps */}
+            <a href="https://www.google.com/maps/place/Chhindwara+Bike+Services/@22.0605777,78.9422883,17z" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10" aria-label="Open Chhindwara Bike Services in Google Maps">
+              <span className="sr-only">Open Chhindwara Bike Services in Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Strip */}
       <div className="text-center text-xs text-gray-500 mt-10 border-t border-gray-200 pt-6">
         &copy; {new Date().getFullYear()} Chhindwara Bike Services. All rights reserved.
