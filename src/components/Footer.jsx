@@ -35,8 +35,6 @@ export default function Footer() {
                 Chat on WhatsApp
               </a>
             </div>
-
-            <div className="mt-2 text-sm text-gray-600 text-center md:text-left">Open: Mon–Sun 9:00 AM – 10:00 PM</div>
           </div>
 
           {/* Quick Links */}
@@ -53,28 +51,30 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-gray-800 text-lg font-semibold mb-3">Contact</h3>
-            <ul className="space-y-3 text-sm text-gray-600">
-              <li className="flex items-start gap-2">
+            <ul className="space-y-3 text-sm text-gray-600 text-center sm:text-left">
+                          <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2 text-center sm:text-left">
                 <FaMapMarkerAlt className="mt-1 text-gray-700" />
                 <div>
                   Bail Bazar, Rautha Wada,<br/>Chhindwara, Madhya Pradesh 480001
                 </div>
               </li>
-              <li className="flex items-center gap-2">
+                          <li className="flex items-center justify-center sm:justify-start gap-2">
                 <FaPhoneAlt className="text-gray-700" />
                 <a href="tel:+918305855880" className="hover:text-gray-900">+91 8305855880</a>
               </li>
-              <li className="flex items-center gap-2">
+                          <li className="flex items-center justify-center sm:justify-start gap-2">
                 <FaEnvelope className="text-gray-700" />
                 <a href="mailto:info@chhindwarabikeservice.in" className="hover:text-gray-900">info@chhindwarabikeservice.in</a>
               </li>
             </ul>
+
+                        <div className="mt-2 text-sm text-gray-600 text-center sm:text-left">Open: Mon–Sun 9:00 AM – 10:00 PM</div>
           </div>
 
           {/* Social Media */}
           <div>
             <h3 className="text-gray-800 text-lg font-semibold mb-3">Follow Us</h3>
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center md:justify-start">
               <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200">
                 <FaFacebookF />
               </a>
