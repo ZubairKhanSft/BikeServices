@@ -41,7 +41,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FaPhoneAlt className="text-yellow-500" />
-              <a href="tel:8888888888" className="hover:text-yellow-500">+91 9340383207</a>
+              <a href="tel:8305855880" className="hover:text-yellow-500">8305855880</a>
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-yellow-500" />

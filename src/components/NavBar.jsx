@@ -79,10 +79,10 @@ export default function Navbar() {
 
           {/* Call Button - only visible on desktop */}
           <a
-            href="tel:9340383207"
+            href="tel:8305855880"
             className="hidden md:inline-block bg-yellow-500 text-black font-bold px-4 py-2 rounded-md hover:bg-yellow-400 transition"
           >
-            Call 9340383207
+            Call 8305855880
           </a>
 
           {/* Mobile Menu Toggle */}
