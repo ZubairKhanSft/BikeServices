@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="bg-white text-gray-800 py-12 px-4 border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-center md:text-left">
 
           {/* Brand */}
           <div>
@@ -92,10 +92,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Map section (responsive) */}
-        <div className="mt-8">
-          <div className="w-full rounded-lg overflow-hidden shadow" style={{ maxWidth: '1100px', margin: '0 auto' }}>
-            <div style={{ position: 'relative', paddingBottom: '56.25%' }}>
+        {/* Map section (responsive, smaller) */}
+        <div className="mt-6">
+          <div className="w-full rounded-lg overflow-hidden shadow mx-auto" style={{ maxWidth: '720px' }}>
+            <div style={{ position: 'relative', paddingBottom: '45%' }}>
               <iframe
                 title="Chhindwara Bike Services map"
                 src={mapSrc}
@@ -108,7 +108,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-3 text-center">
-            <a href={placeUrl} target="_blank" rel="noopener noreferrer" className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-md font-semibold shadow-md hover:bg-yellow-400">Open in Google Maps</a>
+            <a href={placeUrl} target="_blank" rel="noopener noreferrer" className="inline-block bg-yellow-500 text-black px-3 py-2 rounded-md font-semibold shadow-md hover:bg-yellow-400">Open in Google Maps</a>
           </div>
         </div>
 
