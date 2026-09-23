@@ -35,6 +35,8 @@ export default function Footer() {
                 Chat on WhatsApp
               </a>
             </div>
+
+            <div className="mt-2 text-sm text-gray-600 text-center md:text-left">Open: Mon–Sun 9:00 AM – 10:00 PM</div>
           </div>
 
           {/* Quick Links */}
@@ -84,7 +86,7 @@ export default function Footer() {
               </a>
             </div>
 
-            <div className="mt-4 text-sm text-gray-600">
+            {/* <div className="mt-4 text-sm text-gray-600">
               Quick Support:
               <div className="mt-1">
                 <a href="tel:+918305855880" className="font-medium text-gray-800 mr-3">+91 8305855880</a>
@@ -95,7 +97,8 @@ export default function Footer() {
                 <a href="tel:+918305855880" className="inline-block bg-yellow-500 text-black px-3 py-2 rounded-md font-semibold shadow-sm hover:bg-yellow-400">Call</a>
                 <a href="https://wa.me/918305855880" target="_blank" rel="noreferrer" className="inline-block bg-green-500 text-white px-3 py-2 rounded-md font-semibold shadow-sm hover:bg-green-600">WhatsApp</a>
               </div>
-            </div>
+            </div> */}
+         
           </div>
         </div>
 
