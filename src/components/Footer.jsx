@@ -24,17 +24,19 @@ export default function Footer() {
               <div>
                 <h2 className="text-2xl font-bold">Chhindwara Bike Services</h2>
                 <div className="text-sm text-gray-600">Doorstep bike repair, servicing & spare parts</div>
+
+                {/* Buttons aligned under the text (start from the text, not under the logo) */}
+                <div className="mt-3 flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                  <a href="tel:+918305855880" className="inline-flex items-center gap-2 bg-yellow-500 text-black px-2 py-1 rounded-sm font-semibold shadow-sm hover:bg-yellow-400 text-sm"> 
+                    <FaPhoneAlt className="text-base" /> <span className="text-sm">+91 8305855880</span>
+                  </a>
+                  <a href="https://wa.me/918305855880" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 mt-2 sm:mt-0 text-sm text-gray-600 hover:text-gray-800">
+                    Chat on WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:gap-3">
-              <a href="tel:+918305855880" className="inline-flex items-center gap-2 bg-yellow-500 text-black px-3 py-2 rounded-md font-semibold shadow-sm hover:bg-yellow-400"> 
-                <FaPhoneAlt /> <span>+91 8305855880</span>
-              </a>
-              <a href="https://wa.me/918305855880" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 mt-2 sm:mt-0 text-sm text-gray-600 hover:text-gray-800">
-                Chat on WhatsApp
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
