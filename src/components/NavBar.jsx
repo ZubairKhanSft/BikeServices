@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center space-x-2">
 
-          <img src={bikeServiceLogo} alt="Logo" className="w-auto h-14" />
+          <img src={bikeServiceLogo} alt="Logo" loading="lazy" className="w-auto h-14" />
 
           <div className="flex flex-col items-center">
             <div className="text-xl font-extrabold text-gray-800 uppercase tracking-wide">

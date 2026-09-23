@@ -113,6 +113,7 @@ export default function ServiceRequestCard() {
           <img
             src={images[currentImage]}
             alt="Bike Service"
+            loading="lazy"
             className="w-full h-full object-cover transition-all duration-700"
           />
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">

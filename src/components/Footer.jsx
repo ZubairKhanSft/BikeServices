@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <img src="/Chhindwara-logo.png" alt="Chhindwara Bike Services" className="w-12 h-12 rounded-md shadow-sm" />
+              <img src="/Chhindwara-logo.png" alt="Chhindwara Bike Services" loading="lazy" className="w-12 h-12 rounded-md shadow-sm" />
               <div>
                 <h2 className="text-2xl font-bold">Chhindwara Bike Services</h2>
                 <div className="text-sm text-gray-600">Doorstep bike repair, servicing & spare parts</div>
