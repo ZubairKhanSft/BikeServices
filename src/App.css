@@ -33,8 +33,8 @@
   }
 }
 
-/* Smooth scrolling, respects reduced-motion */
-html { scroll-behavior: smooth; }
+/* Smooth scrolling: JS helper will control timing for an ultra-fast smooth scroll */
+html { scroll-behavior: auto; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
