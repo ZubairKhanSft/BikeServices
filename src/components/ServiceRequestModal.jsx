@@ -74,7 +74,7 @@ export default function ServiceRequestModal({ isOpen, onClose }) {
 
       setFormData({ name: '', mobile: '', address: '', date: '', time: '' });
       onClose();
-    } catch (err) {
+    } catch {
       Swal.fire({
         icon: 'error',
         title: 'Submission Failed',
