@@ -109,7 +109,7 @@ export default function ServiceRequestCard() {
     <section className="mt-16 py-10 px-4 bg-slate-100">
       <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden grid md:grid-cols-2">
         {/* LEFT ON DESKTOP, BELOW ON MOBILE */}
-        <div className="relative h-96 md:h-auto order-2 md:order-1">
+        <div className="relative h-64 md:h-auto order-2 md:order-1">
           <img
             src={images[currentImage]}
             alt="Bike Service"
@@ -129,7 +129,7 @@ export default function ServiceRequestCard() {
         </div>
 
         {/* FORM – RIGHT ON DESKTOP, TOP ON MOBILE */}
-        <div className="p-8 bg-white order-1 md:order-2">
+        <div className="p-6 md:p-8 bg-white order-1 md:order-2">
           <h2 className="text-2xl font-bold text-yellow-500 mb-6 text-center">
             Bike Repair <span className="text-gray-800">– See Price</span>
           </h2>
