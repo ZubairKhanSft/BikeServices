@@ -6,7 +6,7 @@
 function prefersReducedMotion() {
   try {
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  } catch (e) {
+  } catch {
     return false;
   }
 }
@@ -64,7 +64,7 @@ function handleAnchorClick(e) {
   // update URL hash without jumping
   try {
     history.pushState(null, '', href);
-  } catch (err) {
+  } catch {
     // ignore
   }
 }

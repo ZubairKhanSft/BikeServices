@@ -1,5 +1,6 @@
 import ChhindwaraMark from "./components/ChhindwaraMark";
 import Footer from "./components/Footer";
+import FaqAndReviews from "./components/FaqAndReviews";
 import JoinUsBanner from "./components/JoinUsBanner";
 import LabourPriceList from "./components/LabourPriceList";
 import Navbar from "./components/NavBar";
@@ -29,6 +30,7 @@ export default function App() {
     <LabourPriceList />
     </section>
     <JoinUsBanner />
+    <FaqAndReviews />
     <Footer />
     </>
   );

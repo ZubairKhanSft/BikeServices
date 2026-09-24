@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
-import bike1 from '../assets/bike_fix.jpg';
-import bike2 from '../assets/bike_fix_1.jpg';
-import bike3 from '../assets/bike_fix_2.jpg';
 
 const images = [
   'https://plus.unsplash.com/premium_photo-1664299589660-35f51cb645ca?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -112,8 +109,13 @@ export default function ServiceRequestCard() {
         <div className="relative h-96 md:h-auto order-2 md:order-1">
           <img
             src={images[currentImage]}
-            alt="Bike Service"
-            loading="lazy"
+            alt="Bike service and repair work"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1200}
+            height={900}
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="w-full h-full object-cover transition-all duration-700"
           />
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">

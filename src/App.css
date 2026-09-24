@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .logo {
@@ -33,10 +33,16 @@
   }
 }
 
-/* Smooth scrolling: JS helper will control timing for an ultra-fast smooth scroll */
-html { scroll-behavior: auto; }
+/* Ultra-fast smooth scrolling with reduced-motion support */
+html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f8fafc;
 }
 
 .card {
