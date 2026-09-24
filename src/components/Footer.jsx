@@ -24,19 +24,19 @@ export default function Footer() {
               <div>
                 <h2 className="text-2xl font-bold">Chhindwara Bike Services</h2>
                 <div className="text-sm text-gray-600">Doorstep bike repair, servicing & spare parts</div>
+
+                {/* Buttons aligned under the text (start from the text, not under the logo) */}
+                <div className="mt-3 flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                  <a href="tel:+918305855880" className="inline-flex items-center gap-2 bg-yellow-500 text-black px-2 py-1 rounded-sm font-semibold shadow-sm hover:bg-yellow-400 text-sm"> 
+                    <FaPhoneAlt className="text-base" /> <span className="text-sm">+91 8305855880</span>
+                  </a>
+                  <a href="https://wa.me/918305855880" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 mt-2 sm:mt-0 text-sm text-gray-600 hover:text-gray-800">
+                    Chat on WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:gap-3">
-              <a href="tel:+918305855880" className="inline-flex items-center gap-2 bg-yellow-500 text-black px-3 py-2 rounded-md font-semibold shadow-sm hover:bg-yellow-400"> 
-                <FaPhoneAlt /> <span>+91 8305855880</span>
-              </a>
-              <a href="https://wa.me/918305855880" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 mt-2 sm:mt-0 text-sm text-gray-600 hover:text-gray-800">
-                Chat on WhatsApp
-              </a>
-            </div>
-
-            <div className="mt-2 text-sm text-gray-600 text-center md:text-left">Open: Mon–Sun 9:00 AM – 10:00 PM</div>
           </div>
 
           {/* Quick Links */}
@@ -53,28 +53,30 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-gray-800 text-lg font-semibold mb-3">Contact</h3>
-            <ul className="space-y-3 text-sm text-gray-600">
-              <li className="flex items-start gap-2">
+            <ul className="space-y-3 text-sm text-gray-600 text-center sm:text-left">
+                          <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2 text-center sm:text-left">
                 <FaMapMarkerAlt className="mt-1 text-gray-700" />
                 <div>
                   Bail Bazar, Rautha Wada,<br/>Chhindwara, Madhya Pradesh 480001
                 </div>
               </li>
-              <li className="flex items-center gap-2">
+                          <li className="flex items-center justify-center sm:justify-start gap-2">
                 <FaPhoneAlt className="text-gray-700" />
                 <a href="tel:+918305855880" className="hover:text-gray-900">+91 8305855880</a>
               </li>
-              <li className="flex items-center gap-2">
+                          <li className="flex items-center justify-center sm:justify-start gap-2">
                 <FaEnvelope className="text-gray-700" />
                 <a href="mailto:info@chhindwarabikeservice.in" className="hover:text-gray-900">info@chhindwarabikeservice.in</a>
               </li>
             </ul>
+
+                        <div className="mt-2 text-sm text-gray-600 text-center sm:text-left">Open: Mon–Sun 9:00 AM – 10:00 PM</div>
           </div>
 
           {/* Social Media */}
           <div>
             <h3 className="text-gray-800 text-lg font-semibold mb-3">Follow Us</h3>
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center md:justify-start">
               <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200">
                 <FaFacebookF />
               </a>
