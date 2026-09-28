@@ -16,6 +16,35 @@ import { siteConfig } from '../components/routeData';
 const serviceLinks = siteConfig.services;
 
 export default function HomePage() {
+  // Homepage-level EmergencyService JSON-LD to help AI indexing of areaServed
+  const emergencySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EmergencyService',
+    name: siteConfig.business.name,
+    telephone: siteConfig.business.phone,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: siteConfig.business.address,
+      addressLocality: siteConfig.business.city,
+      addressRegion: siteConfig.business.state,
+      postalCode: '480001',
+      addressCountry: 'IN'
+    },
+    areaServed: [
+      {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: '22.0574',
+          longitude: '78.9382'
+        },
+        geoRadius: '12000'
+      },
+      ... (siteConfig.areaServedLocalities || []),
+      ... (siteConfig.areaServedSuburbs || [])
+    ]
+  };
+
   return (
     <>
       <SEOHead
@@ -25,6 +54,8 @@ export default function HomePage() {
         ogDescription="Doorstep car puncture repair, bike puncture repair, and roadside assistance in Chhindwara."
         path="/"
       />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(emergencySchema) }} />
 
       <Navbar />
       <GlobalEmergencyBar />

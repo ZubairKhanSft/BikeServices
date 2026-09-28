@@ -171,10 +171,26 @@ export default function ServiceLandingPage({ slug }) {
 
               <div className="mt-8 rounded-2xl bg-[#0b1d3a] p-5 text-white">
                 <h3 className="text-xl font-bold">Serviceable locations in Chhindwara</h3>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {siteConfig.business.areaServed.map((loc) => (
-                    <span key={loc} className="rounded-full bg-white/10 px-3 py-1 text-sm text-slate-100">{loc}</span>
-                  ))}
+                <p className="mt-2 text-sm font-medium text-yellow-200">20–30 Minute Instant Doorstep & Highway Assistance within 12 km Radius of Bail Bazar Workshop.</p>
+
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <div>
+                    <h4 className="text-sm font-semibold text-yellow-200 mb-2">City & Localities (0-5 km)</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {siteConfig.areaServedLocalities.map((loc) => (
+                        <span key={loc} className="rounded-full bg-white/10 px-3 py-1 text-sm text-slate-100">{loc}</span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm font-semibold text-yellow-200 mb-2">Suburbs & Highway Assistance (Up to 12 km)</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {siteConfig.areaServedSuburbs.map((loc) => (
+                        <span key={loc} className="rounded-full bg-white/10 px-3 py-1 text-sm text-slate-100">{loc}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
