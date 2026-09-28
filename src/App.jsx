@@ -1,37 +1,16 @@
-import ChhindwaraMark from "./components/ChhindwaraMark";
-import Footer from "./components/Footer";
-import FaqAndReviews from "./components/FaqAndReviews";
-import JoinUsBanner from "./components/JoinUsBanner";
-import LabourPriceList from "./components/LabourPriceList";
-import Navbar from "./components/NavBar";
-import RSAPackages from "./components/RSAPackages";
-import ServiceGrid from "./components/ServiceGrid";
-import ServicePackages from "./components/ServicePackages";
-import ServiceRequestCard from "./components/ServiceRequestCard";
-import WhyChooseUs from "./components/WhyChooseUs";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ServiceLandingPage from './components/ServiceLandingPage';
 
 export default function App() {
   return (
-    <>
-    <Navbar />
-    <section id="contact">
-    <ServiceRequestCard />
-      </section>
-    <section id="about">
-    <WhyChooseUs />
-    <ChhindwaraMark />
-    </section>
-    <section id="services">
-    <ServiceGrid />
-    </section>
-    <ServicePackages />
-    <RSAPackages />
-    <section id="pricing">
-    <LabourPriceList />
-    </section>
-    <JoinUsBanner />
-    <FaqAndReviews />
-    <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/car-puncture-repair-chhindwara" element={<ServiceLandingPage slug="car-puncture-repair-chhindwara" />} />
+        <Route path="/bike-puncture-repair-chhindwara" element={<ServiceLandingPage slug="bike-puncture-repair-chhindwara" />} />
+        <Route path="/roadside-assistance-chhindwara" element={<ServiceLandingPage slug="roadside-assistance-chhindwara" />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

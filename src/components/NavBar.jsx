@@ -10,6 +10,7 @@ export default function Navbar() {
 
   const menuItems = [
     { label: 'Home', href: '#' },
+    { label: 'Car & Bike Puncture RSA', href: '#services' },
     { label: 'Services', href: '#services' },
     { label: 'About Us', href: '#about' },
     { label: 'Pricing', href: '#pricing' },
