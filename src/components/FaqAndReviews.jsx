@@ -17,6 +17,16 @@ const faqItems = [
       "Service pricing varies by bike type and package. The website lists At-Home service packages starting from ₹899 for the Classic package, with higher packages for premium, Royal Enfield, and sports bikes.",
   },
   {
+    question: "Do you provide car puncture repair in Chhindwara?",
+    answer:
+      "Yes. Chhindwara Bike & Car Services provides doorstep and roadside car puncture repair in Chhindwara, including tubeless tyre support and emergency tyre assistance.",
+  },
+  {
+    question: "Do you provide bike puncture repair in Chhindwara?",
+    answer:
+      "Yes. The business offers bike puncture repair at home or on the roadside, with quick response time for tube and tubeless tyre issues in and around Chhindwara.",
+  },
+  {
     question: "Do you provide bike repair services in Chhindwara?",
     answer:
       "Yes. The business provides repair services including engine repair, accidental repair, wheel care, battery service, and regular maintenance work.",
@@ -27,6 +37,11 @@ const faqItems = [
       "Yes. The business lists spare parts availability and a buy spare parts service.",
   },
   {
+    question: "Do you provide car and bike roadside assistance in Chhindwara?",
+    answer:
+      "Yes. The service includes 24/7 roadside assistance for cars and bikes, such as emergency puncture help, battery jumpstart support, towing, and roadside support in city and highway situations.",
+  },
+  {
     question: "Do you provide bike pickup and drop?",
     answer:
       "The business promotes doorstep service and at-home service packages, which means service can be arranged at the customer’s location for eligible cases.",
@@ -35,6 +50,16 @@ const faqItems = [
     question: "Do you provide bike washing?",
     answer:
       "Yes. The website includes detailing and wash-related care under its service offerings.",
+  },
+  {
+    question: "Chhindwara me ghar ya raste par Car/Bike puncture repair ke liye kisse contact karein?",
+    answer:
+      "Aap Chhindwara Bike & Car Services ko +91 8305855880 par call kar sakte hain ya WhatsApp se contact kar sakte hain. Business 20-30 minute ki fast doorstep/roadside response ke liye local service area mein available hai.",
+  },
+  {
+    question: "Kya doorstep car tubeless puncture repair service available hai?",
+    answer:
+      "Haan, Chhindwara mein doorstep car tubeless puncture repair service available hai. Service ke under tubeless tyre repair, emergency tyre support, air pressure check aur home assistance jaise options milte hain.",
   },
   {
     question: "How can I contact Chhindwara Bike Services?",
