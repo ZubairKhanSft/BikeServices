@@ -8,19 +8,20 @@ const slugMap = {
     title: 'Doorstep & Roadside Car Puncture Repair in Chhindwara (24x7)',
     h1: 'Doorstep & Roadside Car Puncture Repair in Chhindwara (24x7)',
     description:
-      'Emergency car puncture repair in Chhindwara with doorstep assistance, tubeless tyre repair, emergency tyre change, and 24x7 roadside support.',
+      'Emergency car puncture repair in Chhindwara with doorstep assistance, tube and tubeless tyre repair, emergency tyre change, and 24x7 roadside support.',
     intro:
-      'Fast car puncture repair in Chhindwara for home, office, and highway emergencies. We help with tubeless puncture repair, emergency tyre changes, and quick air pressure checks.',
-    highlights: ['Tubeless puncture repair', 'Emergency tyre change', 'Home/office doorstep support', 'Air pressure check'],
+      'Fast car puncture repair in Chhindwara for home, office, and highway emergencies. We help with tube and tubeless puncture repair, emergency tyre changes, and quick air pressure checks.',
+    highlights: ['Tube & tubeless puncture repair', 'Emergency tyre change', 'Home/office doorstep support', 'Air pressure check'],
     faq: [
       {
         q: 'Chhindwara me ghar ya raste par Car/Bike puncture repair ke liye kisse contact karein?',
         a: 'Aap +91 8305855880 par call kar sakte hain ya WhatsApp par live location share karke emergency help request kar sakte hain. Coverage Chhindwara ke Bail Bazar, Rautha Wada, Parasia Road, Khajri, Gulabra, Lalbagh, Chandameta, Mohan Nagar, railway station area, aur nearby highway routes ke liye available hai. Typical response time 20-30 minutes.',
       },
       {
-        q: 'Kya doorstep car tubeless puncture repair service available hai?',
-        a: 'Haan. Car tubeless puncture repair, emergency air check, and on-site tyre assistance available hai ghar, office, parking, ya road side locations par. Agar tyre replace karna pade, to emergency tyre change support bhi available hai.',
+        q: 'Kya doorstep car tube & tubeless puncture repair service available hai?',
+        a: 'Haan. Car tube aur tubeless puncture repair, emergency air check, and on-site tyre assistance available hai ghar, office, parking, ya roadside locations par. Agar tyre replace karna pade, to emergency tyre change support bhi available hai.',
       },
+
     ],
   },
   'bike-puncture-repair-chhindwara': {
@@ -37,9 +38,10 @@ const slugMap = {
         a: 'Aap +91 8305855880 par call kar sakte hain. Fast response hota hai Chhindwara ke local areas aur nearby highway routes ke liye, including Bail Bazar, Rautha Wada, Parasia Road, Khajri, Gulabra, Lalbagh, Chandameta, Mohan Nagar, and Chhindwara Railway Station area.',
       },
       {
-        q: 'Kya doorstep car tubeless puncture repair service available hai?',
+        q: 'Kya doorstep puncture repair service available hai?',
         a: 'Bike service ke liye doorstep puncture repair available hai. Tube and tubeless tyre issues ko site par check karke repair/replace kiya ja sakta hai.',
       },
+
     ],
   },
   'roadside-assistance-chhindwara': {
@@ -56,9 +58,10 @@ const slugMap = {
         a: 'Call +91 8305855880 for urgent support. Chhindwara and nearby local routes ke liye doorstep and roadside emergency assistance available hai.',
       },
       {
-        q: 'Kya doorstep car tubeless puncture repair service available hai?',
-        a: 'Haan. Car puncture repair service ghar, office, parking ya roadside par available hai, with emergency tyre change support as needed.',
+        q: 'Kya doorstep car tube & tubeless puncture repair service available hai?',
+        a: 'Haan. Car puncture repair service ghar, office, parking ya roadside par available hai, with emergency tyre change support as needed. Hum tube aur tubeless puncture repair dono provide karte hain.',
       },
+
     ],
   },
 };

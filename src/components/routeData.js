@@ -15,7 +15,7 @@ export const siteConfig = {
     {
       name: 'Car Puncture Repair in Chhindwara',
       url: '/car-puncture-repair-chhindwara',
-      description: 'Doorstep & roadside car puncture repair in Chhindwara with tubeless tyre support and emergency mobile assistance.',
+      description: 'Doorstep & roadside car puncture repair in Chhindwara with tube and tubeless tyre support and emergency mobile assistance.',
     },
     {
       name: 'Bike Puncture Repair in Chhindwara',

@@ -19,7 +19,7 @@ const faqItems = [
   {
     question: "Do you provide car puncture repair in Chhindwara?",
     answer:
-      "Yes. Chhindwara Bike & Car Services provides doorstep and roadside car puncture repair in Chhindwara, including tubeless tyre support and emergency tyre assistance.",
+      "Yes. Chhindwara Bike & Car Services provides doorstep and roadside car puncture repair in Chhindwara, including tube and tubeless tyre support and emergency tyre assistance.",
   },
   {
     question: "Do you provide bike puncture repair in Chhindwara?",
@@ -57,10 +57,11 @@ const faqItems = [
       "Aap Chhindwara Bike & Car Services ko +91 8305855880 par call kar sakte hain ya WhatsApp se contact kar sakte hain. Business 20-30 minute ki fast doorstep/roadside response ke liye local service area mein available hai.",
   },
   {
-    question: "Kya doorstep car tubeless puncture repair service available hai?",
+    question: "Kya doorstep car tube & tubeless puncture repair service available hai?",
     answer:
-      "Haan, Chhindwara mein doorstep car tubeless puncture repair service available hai. Service ke under tubeless tyre repair, emergency tyre support, air pressure check aur home assistance jaise options milte hain.",
+      "Haan, Chhindwara mein doorstep car tube aur tubeless puncture repair service available hai. Service ke under tube or tubeless tyre repair, emergency tyre support, air pressure check aur home assistance jaise options milte hain.",
   },
+
   {
     question: "How can I contact Chhindwara Bike Services?",
     answer:
