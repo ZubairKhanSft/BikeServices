@@ -6,23 +6,13 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { siteConfig } from './routeData';
 
 export default function Footer() {
   const mapSrc = "https://www.google.com/maps?q=22.060591,78.9424304&z=17&output=embed";
   const placeUrl = "https://www.google.com/maps/place/Chhindwara+Bike+Services/@22.0605777,78.9422883,17z";
-  const serviceableLocations = [
-    'Bail Bazar',
-    'Rautha Wada',
-    'Parasia Road',
-    'Khajri',
-    'Gulabra',
-    'Lalbagh',
-    'Chandameta',
-    'Mohan Nagar',
-    'Chhindwara Railway Station area',
-    'nearby highways',
-  ];
-
+  const serviceableLocalities = siteConfig.areaServedLocalities || [];
+  const serviceableSuburbs = siteConfig.areaServedSuburbs || [];
   return (
     <footer className="bg-white text-gray-800 py-12 px-4 border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
@@ -117,12 +107,30 @@ export default function Footer() {
 
         <div className="mt-8 rounded-2xl border border-yellow-200 bg-slate-50 p-5">
           <h3 className="text-xl font-bold text-[#0b1d3a]">Serviceable locations in Chhindwara</h3>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {serviceableLocations.map((location) => (
-              <span key={location} className="rounded-full bg-white px-3 py-1 text-sm text-slate-700 border border-slate-200">
-                {location}
-              </span>
-            ))}
+          <p className="mt-2 text-sm font-medium text-[#0b1d3a]">20–30 Minute Instant Doorstep & Highway Assistance within 12 km Radius of Bail Bazar Workshop.</p>
+
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            <div>
+              <h4 className="text-sm font-semibold mb-2">City & Localities (0-5 km)</h4>
+              <div className="flex flex-wrap gap-2">
+                {serviceableLocalities.map((location) => (
+                  <span key={location} className="rounded-full bg-white px-3 py-1 text-sm text-slate-700 border border-slate-200">
+                    {location}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold mb-2">Suburbs & Highway Assistance (Up to 12 km)</h4>
+              <div className="flex flex-wrap gap-2">
+                {serviceableSuburbs.map((location) => (
+                  <span key={location} className="rounded-full bg-white px-3 py-1 text-sm text-slate-700 border border-slate-200">
+                    {location}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
