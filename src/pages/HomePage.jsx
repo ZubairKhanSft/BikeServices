@@ -48,8 +48,8 @@ export default function HomePage() {
   return (
     <>
       <SEOHead
-        title="Chhindwara Bike & Car Services | Car Puncture Repair, Bike Puncture Repair & Roadside Assistance"
-        description="Chhindwara Bike & Car Services offers doorstep bike puncture repair, car puncture repair, roadside assistance, and emergency help in Chhindwara. Call +91 8305855880."
+        title="Bike Repair & Roadside Assistance in Chhindwara | Bike & Car Puncture Repair"
+        description="Need a bike mechanic or roadside assistance in Chhindwara? Get bike and car puncture repair, tubeless tyre help, and emergency roadside support. Call +91 8305855880."
         ogTitle="Chhindwara Bike & Car Services"
         ogDescription="Doorstep car puncture repair, bike puncture repair, and roadside assistance in Chhindwara."
         path="/"
@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#0b1d3a]">Emergency service</p>
-              <h2 className="mt-2 text-3xl font-bold text-[#0b1d3a] md:text-4xl">Car & Bike puncture & roadside assistance</h2>
+              <h2 className="mt-2 text-3xl font-bold text-[#0b1d3a] md:text-4xl">Bike repair, car & bike puncture repair, and roadside assistance</h2>
             </div>
           </div>
 

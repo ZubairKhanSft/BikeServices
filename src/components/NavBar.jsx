@@ -56,7 +56,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-3">
           {/* WhatsApp Button - visible on all screen sizes */}
           <a
-            href="https://wa.me/919424495542?text=Hi%2C%20I%27m%20interested%20in%20your%20BikeFix%20services.%20Could%20you%20please%20tell%20me%20more%3F"
+            href="https://wa.me/918305855880?text=Hi%2C%20I%20need%20bike%20repair%20or%20roadside%20assistance%20in%20Chhindwara."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 bg-green-500 text-white font-semibold px-3 py-2 rounded-md hover:bg-green-600 transition text-sm md:text-base"
@@ -67,11 +67,11 @@ export default function Navbar() {
 
           {/* Phone Button - visible on mobile and desktop but smaller on mobile */}
           <a
-            href="tel:8305855880"
+            href="tel:+918305855880"
             className="inline-flex items-center gap-2 bg-yellow-500 text-black font-bold px-3 py-2 rounded-md hover:bg-yellow-400 transition text-sm md:px-4 md:py-2 md:text-base"
           >
             <FaPhoneAlt className="w-4 h-4 md:w-5 md:h-5" />
-            <span className="sr-only md:not-sr-only">Call 8305855880</span>
+            <span className="sr-only md:not-sr-only">Call +91 8305855880</span>
           </a>
 
           {/* Mobile Menu Toggle */}

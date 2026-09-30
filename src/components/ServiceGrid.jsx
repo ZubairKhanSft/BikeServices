@@ -14,18 +14,18 @@ import {
 } from 'react-icons/fa';
 
 const services = [
-  { icon: <FaCalendarAlt size={32} />, label: 'Periodic Service' },
-  { icon: <FaPaintRoller size={32} />, label: 'Dent & Paint' },
-  { icon: <FaShieldAlt size={32} />, label: 'Bike Insurance' },
-  { icon: <FaDoorOpen size={32} />, label: 'Doorstep Service' },
-  { icon: <FaCog size={32} />, label: 'Wheel Care' },
-  { icon: <FaBroom size={32} />, label: 'Detailing' },
-  { icon: <FaTools size={32} />, label: 'Accidental Repair' },
-  { icon: <FaCarBattery size={32} />, label: 'Bike Batteries' },
-  { icon: <FaShoppingCart size={32} />, label: 'Buy Spare Parts' },
-  { icon: <FaBolt size={32} />, label: 'EV Bike Service' },
-  { icon: <FaCogs size={32} />, label: 'Engine Repair' },
-  { icon: <FaTruckMoving size={32} />, label: 'Bike RSA Services' },
+  { icon: <FaTruckMoving size={32} />, label: 'Roadside Assistance' },
+  { icon: <FaTools size={32} />, label: 'Bike Repair' },
+  { icon: <FaBolt size={32} />, label: 'Bike Puncture Repair' },
+  { icon: <FaCog size={32} />, label: 'Car Puncture Repair' },
+  { icon: <FaDoorOpen size={32} />, label: 'Doorstep Mechanic' },
+  { icon: <FaCarBattery size={32} />, label: 'Battery Jumpstart' },
+  { icon: <FaTruckMoving size={32} />, label: 'Towing Assistance' },
+  { icon: <FaCogs size={32} />, label: 'Motorcycle Repair' },
+  { icon: <FaCalendarAlt size={32} />, label: 'Bike Servicing' },
+  { icon: <FaShieldAlt size={32} />, label: 'Tubeless Tyre Repair' },
+  { icon: <FaBroom size={32} />, label: 'Emergency Road Service' },
+  { icon: <FaShoppingCart size={32} />, label: 'Bike Mechanic Support' },
 ];
 
 export default function ServiceGrid() {
